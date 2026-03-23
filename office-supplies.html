@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office Supplies - SPH International Corporation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="product-page">
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <a href="index.html"><img src="src/sph1.png" alt="SPH International Corporation"></a>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#mission">Mission & Vision</a></li>
+    <li><a href="index.html#values">Values</a></li>
+    <li><a href="index.html#products">Products</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-accent2"></div>
+  <div class="hero-content">
+    <h1 class="hero-tagline">Office<br><span>Supplies</span></h1>
+    <p class="hero-sub">From paper and folders to writing tools and desk essentials — everything your office needs to run smoothly.</p>
+    <div class="hero-cta">
+      <a href="index.html#products" class="btn btn-red">Back to Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar">
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    No. 1102 Quiricada Ext., Tondo, Manila 1012
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-phone"></i>
+    (02) 8251-1548 / (02) 254-0841
+  </div>
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    sphinternational1@gmail.com
+  </div>
+  <div class="contact-item">
+    <i class="fa-brands fa-facebook-f"></i>
+    <a href="https://www.facebook.com/sphic.corp" target="_blank">SPH Int'l Corp</a>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products" class="products-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Office Supplies</div>
+      <h2>Our Office Products</h2>
+      <p class="lead">From paper and folders to writing tools and desk essentials — everything your office needs to run smoothly and efficiently.</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="product-image"><img src="src/products/office/paper-products.jpg" alt="Paper Products"></div>
+        <h3>Paper Products</h3>
+        <p>Copy paper, bond paper, kraft paper, and specialty paper for printing, filing, and documentation needs.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-image"><img src="src/products/office/writing-instruments.jpg" alt="Writing Instruments"></div>
+        <h3>Writing Instruments</h3>
+        <p>Ballpens, permanent markers, whiteboard markers, and highlighters for everyday office and institutional use.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-image"><img src="src/products/office/filing-storage.jpg" alt="Filing & Storage"></div>
+        <h3>Filing & Storage</h3>
+        <p>Data folders, documentary boxes, plastic envelopes, vertical folders, and binders for organized document management.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-image"><img src="src/products/office/desk-accessories.jpg" alt="Desk Accessories"></div>
+        <h3>Desk Accessories</h3>
+        <p>Staplers, tape dispensers, scissors, rulers, and other functional desk essentials for productive workspaces.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-image"><img src="src/products/office/padlocks.jpg" alt="Padlocks & Security"></div>
+        <h3>Padlocks & Security</h3>
+        <p>Padlocks with keys and security accessories for offices, storage rooms, and institutional facilities.</p>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-image"><img src="src/products/office/packaging.jpg" alt="Packaging & Wrapping"></div>
+        <h3>Packaging & Wrapping</h3>
+        <p>Stretch films, transparent tape, utility boxes, and packaging materials for logistics and storage operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img src="src/sph1.png" alt="SPH International Corporation">
+  </div>
+  <p>&copy; 2024 SPH International Corporation. All rights reserved.</p>
+</footer>
+
+<!-- BACK TO TOP -->
+<div id="backToTop"><i class="fas fa-arrow-up"></i></div>
+
+<script src="script.js"></script>
+</body>
+</html>
