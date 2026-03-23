@@ -50,6 +50,10 @@
     flex-direction: column;
   }
   .hero-video {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    border: none; object-fit: cover;
+  }
+  .hero-video {
     position: absolute; inset: 0;
     width: 100%; height: 100%;
     object-fit: cover;
