@@ -40,6 +40,9 @@
   .nav-links a:hover { color: var(--red-light); }
   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
   .hamburger span { width: 26px; height: 2px; background: white; display: block; transition: 0.3s; }
+  .hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.is-open span:nth-child(2) { opacity: 0; }
+  .hamburger.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
   /* ── HERO ── */
   .hero {
@@ -48,10 +51,6 @@
     display: flex; align-items: center; justify-content: center;
     position: relative; overflow: hidden;
     flex-direction: column;
-  }
-  .hero-video {
-    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-    object-fit: cover;
   }
   .hero-video {
     position: absolute; inset: 0;
@@ -110,18 +109,6 @@
   .btn-red:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,16,46,0.4); }
   .btn-outline { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.4); }
   .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.08); transform: translateY(-2px); }
-
-  .scroll-hint {
-    position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
-    display: flex; flex-direction: column; align-items: center; gap: 8px;
-    color: rgba(255,255,255,0.4); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
-    animation: bounce 2s infinite;
-    z-index: 2;
-  }
-  .scroll-line {
-    width: 1px; height: 50px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
-  }
 
   /* ── CONTACT BAR ── */
   .contact-bar {
@@ -261,9 +248,16 @@
     gap: 24px; margin-top: 50px;
   }
   .client-card {
-    padding: 32px 24px; display: flex; align-items: center; justify-content: center;
+    padding: 24px 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    border: 1px solid var(--gray); border-radius: 4px; gap: 14px;
+    transition: box-shadow 0.3s, transform 0.3s;
   }
-  .client-card img { max-width: 100%; max-height: 120px; object-fit: contain; }
+  .client-card:hover { box-shadow: 0 8px 30px rgba(27,47,107,0.1); transform: translateY(-4px); }
+  .client-card img { max-width: 100%; max-height: 110px; object-fit: contain; }
+  .client-name {
+    font-size: 0.72rem; font-weight: 600; color: var(--blue-dark);
+    text-align: center; line-height: 1.4; letter-spacing: 0.02em;
+  }
 
   /* ── PROJECTS ── */
   .projects-section { background: var(--off-white); }
@@ -423,7 +417,6 @@
     .contact-form { gap: 12px; }
     .form-group input, .form-group textarea { font-size: 16px; } /* prevent iOS zoom */
     footer { padding: 24px 16px; }
-    .scroll-hint { display: none; }
   }
 
   /* ── SMALL MOBILE (320px–400px) ── */

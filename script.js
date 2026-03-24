@@ -1,4 +1,20 @@
-// Scroll reveal
+// Hamburger toggle
+  function toggleNav() {
+    const navLinks = document.getElementById('navLinks');
+    const hamburger = document.getElementById('hamburger');
+    const isOpen = navLinks.classList.toggle('open');
+    hamburger.classList.toggle('is-open', isOpen);
+  }
+
+  // Close nav on link click
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('navLinks').classList.remove('open');
+      document.getElementById('hamburger').classList.remove('is-open');
+    });
+  });
+
+  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
     entries.forEach((e, i) => {
@@ -9,15 +25,6 @@
     });
   }, { threshold: 0.1 });
   reveals.forEach(r => observer.observe(r));
-
-  // Form submit
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button');
-    btn.textContent = 'Message Sent!';
-    btn.style.background = '#1B2F6B';
-    setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 3000);
-  }
 
   // Nav scroll effect
   window.addEventListener('scroll', () => {

@@ -25,7 +25,7 @@
     <li><a href="#clients">Clients</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="hamburger" id="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </div>
 </nav>
@@ -47,17 +47,13 @@
       <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
   </div>
-  <div class="scroll-hint">
-    <div class="scroll-line"></div>
-    <span>Scroll</span>
-  </div>
 </section>
 
 <!-- CONTACT BAR -->
 <div class="contact-bar">
   <div class="contact-item">
     <i class="fas fa-map-marker-alt"></i>
-    No. 1102 Quiricada Ext., Tondo, Manila 1012
+    <a href="https://maps.app.goo.gl/wtPegKEpS8rx8wV39" target="_blank" rel="noopener noreferrer">No. 1102 Quiricada Ext., Tondo, Manila 1012</a>
   </div>
   <div class="contact-item">
     <i class="fas fa-phone"></i>
@@ -65,11 +61,11 @@
   </div>
   <div class="contact-item">
     <i class="fas fa-envelope"></i>
-    <a>sphinternational1@gmail.com</a>
+    <a href="https://mail.google.com/mail/?view=cm&to=sphinternational1@gmail.com" target="_blank">sphinternational1@gmail.com</a>
   </div>
   <div class="contact-item">
     <i class="fa-brands fa-facebook-f"></i>
-    <a href="https://www.facebook.com/sphic.corp" target="_blank">SPH Int'l Corp</a>
+    <a href="https://www.facebook.com/sphic.corp" target="_blank" rel="noopener noreferrer">SPH Int'l Corp</a>
   </div>
 </div>
 
@@ -696,40 +692,48 @@
     </div>
     <div class="clients-grid">
       <div class="client-card reveal">
-        <img src="src/pcso.png" alt="Client">
+        <img src="src/pcso.png" alt="Philippine Charity Sweepstakes Office">
+        <span class="client-name">Philippine Charity Sweepstakes Office</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/comelec.png" alt="Client">
+        <img src="src/comelec.png" alt="Commission on Elections">
+        <span class="client-name">Commission on Elections</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/pagcor.png" alt="Client">
+        <img src="src/pagcor.png" alt="Philippine Amusement and Gaming Corporation">
+        <span class="client-name">Philippine Amusement and Gaming Corporation</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/lra.png" alt="Client">
+        <img src="src/lra.png" alt="Land Registration Authority">
+        <span class="client-name">Land Registration Authority</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/mmda.png" alt="Client">
+        <img src="src/mmda.png" alt="Metro Manila Development Authority">
+        <span class="client-name">Metro Manila Development Authority</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/doh.png" alt="Client">
+        <img src="src/doh.png" alt="Department of Health">
+        <span class="client-name">Department of Health</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/sc.webp" alt="Client">
+        <img src="src/sc.webp" alt="Supreme Court of the Philippines">
+        <span class="client-name">Supreme Court of the Philippines</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/barmm.png" alt="Client">
+        <img src="src/barmm.png" alt="Bangsamoro Autonomous Region in Muslim Mindanao">
+        <span class="client-name">Bangsamoro Autonomous Region in Muslim Mindanao</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/barmm.png" alt="Client">
+        <img src="src/ps.png" alt="Procurement Service">
+        <span class="client-name">Procurement Service</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/ps.png" alt="Client">
+        <img src="src/psc.png" alt="Philippine Sports Commission">
+        <span class="client-name">Philippine Sports Commission</span>
       </div>
       <div class="client-card reveal">
-        <img src="src/psc.png" alt="Client">
-      </div>
-      <div class="client-card reveal">
-        <img src="src/ocd.png" alt="Client">
+        <img src="src/ocd.png" alt="Office of Civil Defense">
+        <span class="client-name">Office of Civil Defense</span>
       </div>
     </div>
   </div>
@@ -748,7 +752,7 @@
           <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
           <div>
             <h4>Address</h4>
-            <p>No. 1102 Quiricada Ext., Tondo<br>Manila, Philippines 1012</p>
+            <p><a href="https://maps.app.goo.gl/wtPegKEpS8rx8wV39" target="_blank" rel="noopener noreferrer">No. 1102 Quiricada Ext., Tondo, Manila 1012</a></p>
           </div>
         </div>
         <div class="contact-info-item">
@@ -762,14 +766,14 @@
           <div class="contact-icon"><i class="fas fa-envelope"></i></div>
           <div>
             <h4>Email</h4>
-            <p>sphinternational1@gmail.com</p>
+            <p><a href="https://mail.google.com/mail/?view=cm&to=sphinternational1@gmail.com" target="_blank">sphinternational1@gmail.com</a></p>
           </div>
         </div>
         <div class="contact-info-item">
           <div class="contact-icon"><i class="fa-brands fa-facebook-f"></i></div>
           <div>
             <h4>Facebook</h4>
-            <p><a href="https://www.facebook.com/sphic.corp" target="_blank">SPH Int'l Corp</a></p>
+            <p><a href="https://www.facebook.com/sphic.corp" target="_blank" rel="noopener noreferrer">SPH Int'l Corp</a></p>
           </div>
         </div>
       </div>
