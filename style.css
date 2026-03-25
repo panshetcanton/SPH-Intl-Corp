@@ -235,7 +235,7 @@
   .product-card h3 { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--blue-dark); margin-bottom: 10px; }
   .product-card p { font-size: 0.88rem; color: #6b7a9a; line-height: 1.7; flex: 1; }
 
-  .product-image { width: 100%; height: 180px; background: #e8ecf4; border-radius: 4px; overflow: hidden; margin-bottom: 16px; }
+  .product-image { width: 100%; height: 200px; background: #e8ecf4; border-radius: 4px; overflow: hidden; margin-bottom: 16px; }
   .product-image img { width: 100%; height: 100%; object-fit: cover; }
   body.product-page .product-card { padding: 16px; text-align: left; display: flex; flex-direction: column; }
   body.product-page .product-card h3 { font-size: 1rem; margin: 0; }
@@ -244,6 +244,7 @@
 
   /* ── CARD SLIDER ── */
   .card-slider { position: relative; overflow: hidden; }
+  .card-slider.product-image { height: auto; aspect-ratio: 1 / 1; }
   .card-slides { display: flex; transition: transform 0.35s ease; height: 100%; }
   .card-slides img { flex: 0 0 100%; width: 100%; height: 100%; object-fit: cover; }
   .card-prev, .card-next {
