@@ -42,3 +42,25 @@
   document.getElementById('backToTop').addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // Card image slider
+  const cardSliderState = {};
+  function cardSlide(id, dir) {
+    const slider = document.getElementById(id);
+    const slides = slider.querySelector('.card-slides');
+    const total = slides.querySelectorAll('img').length;
+    if (!cardSliderState[id]) cardSliderState[id] = 0;
+    cardSliderState[id] = (cardSliderState[id] + dir + total) % total;
+    slides.style.transform = `translateX(-${cardSliderState[id] * 100}%)`;
+  }
+
+  // Auto-glide
+  const allSliders = [
+    'paperSlider','writingSlider','filingSlider','deskSlider','padlockSlider','packagingSlider',
+    'airconSlider','fansSlider','fridgeSlider','vipSlider','variousSlider','giveawaysSlider',
+    'cleaningSlider','mopsSlider','trashSlider','janPaperSlider','safetySlider','maintenanceSlider',
+    'packedSlider','csrSlider','reliefSlider','welfareSlider','christmasSlider','grocerySlider',
+    'hygieneKitSlider','soapSlider','washSlider','disinfectantSlider','mosquitoSlider','tissueSlider',
+    'laptopSlider','desktopSlider','printerSlider','tabletSlider','cctvSlider','storageSlider','voiceSlider','fingerprintSlider','peripheralsSlider'
+  ];
+  setInterval(() => allSliders.forEach(id => { if (document.getElementById(id)) cardSlide(id, 1); }), 3000);

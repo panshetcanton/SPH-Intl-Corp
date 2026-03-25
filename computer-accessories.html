@@ -73,47 +73,119 @@
     </div>
     <div class="products-grid">
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/laptops.jpg" alt="Laptops"></div>
+        <div class="product-image card-slider" id="laptopSlider">
+          <div class="card-slides">
+            <img src="src/products/it/laptops.jpg" alt="Laptops 1">
+            <img src="src/products/it/laptops-2.jpg" alt="Laptops 2">
+            <img src="src/products/it/laptops-3.jpg" alt="Laptops 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('laptopSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('laptopSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>Laptops</h3>
         <p>Portable laptops and notebooks from trusted brands for office work, field operations, and institutional use.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/desktops.jpg" alt="Desktop Computers"></div>
+        <div class="product-image card-slider" id="desktopSlider">
+          <div class="card-slides">
+            <img src="src/products/it/desktops.jpg" alt="Desktop Computers 1">
+            <img src="src/products/it/desktops-2.jpg" alt="Desktop Computers 2">
+            <img src="src/products/it/desktops-3.jpg" alt="Desktop Computers 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('desktopSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('desktopSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>Desktop Computers</h3>
         <p>Powerful desktop computers for offices, government agencies, and institutions requiring reliable workstation setups.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/printer.jpg" alt="Multipurpose Printers"></div>
+        <div class="product-image card-slider" id="printerSlider">
+          <div class="card-slides">
+            <img src="src/products/it/printer.jpg" alt="Printers 1">
+            <img src="src/products/it/printer-2.jpg" alt="Printers 2">
+            <img src="src/products/it/printer-3.jpg" alt="Printers 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('printerSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('printerSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>Multipurpose Printers</h3>
         <p>All-in-one printers with print, scan, copy, and fax functions for offices, government agencies, and commercial facilities.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/tablets.jpg" alt="Tablets & Mobile Devices"></div>
+        <div class="product-image card-slider" id="tabletSlider">
+          <div class="card-slides">
+            <img src="src/products/it/tablets.jpg" alt="Tablets 1">
+            <img src="src/products/it/tablets-2.jpg" alt="Tablets 2">
+            <img src="src/products/it/tablets-3.jpg" alt="Tablets 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('tabletSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('tabletSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>Tablets & Mobile Devices</h3>
         <p>Tablets and mobile computing devices for field operations, training, and institutional use.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/cctv.jpg" alt="CCTV Surveillance Systems"></div>
+        <div class="product-image card-slider" id="cctvSlider">
+          <div class="card-slides">
+            <img src="src/products/it/cctv.jpg" alt="CCTV 1">
+            <img src="src/products/it/cctv-2.jpg" alt="CCTV 2">
+            <img src="src/products/it/cctv-3.jpg" alt="CCTV 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('cctvSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('cctvSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>CCTV Surveillance Systems</h3>
         <p>Supply, delivery, installation, configuration, and commissioning of CCTV systems for warehouses, offices, and facilities.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/external-storage.jpg" alt="External Storage"></div>
+        <div class="product-image card-slider" id="storageSlider">
+          <div class="card-slides">
+            <img src="src/products/it/external-storage.jpg" alt="External Storage 1">
+            <img src="src/products/it/external-storage-2.jpg" alt="External Storage 2">
+            <img src="src/products/it/external-storage-3.jpg" alt="External Storage 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('storageSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('storageSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>External Storage</h3>
         <p>External hard drives and portable drives (1TB and above) for secure data backup and transfer in offices and field operations.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/voice-recorder.jpg" alt="Digital Voice Recorders"></div>
+        <div class="product-image card-slider" id="voiceSlider">
+          <div class="card-slides">
+            <img src="src/products/it/voice-recorder.jpg" alt="Voice Recorders 1">
+            <img src="src/products/it/voice-recorder-2.jpg" alt="Voice Recorders 2">
+            <img src="src/products/it/voice-recorder-3.jpg" alt="Voice Recorders 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('voiceSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('voiceSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>Digital Voice Recorders</h3>
         <p>Professional-grade digital voice recorders for meetings, hearings, and documentation in government and corporate settings.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/fingerprint.jpg" alt="Fingerprint & Biometric Devices"></div>
+        <div class="product-image card-slider" id="fingerprintSlider">
+          <div class="card-slides">
+            <img src="src/products/it/fingerprint.jpg" alt="Fingerprint Devices 1">
+            <img src="src/products/it/fingerprint-2.jpg" alt="Fingerprint Devices 2">
+            <img src="src/products/it/fingerprint-3.jpg" alt="Fingerprint Devices 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('fingerprintSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('fingerprintSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>Fingerprint & Biometric Devices</h3>
         <p>Thumbprint and fingerprint takers for voter registration, attendance systems, and identity verification.</p>
       </div>
       <div class="product-card reveal">
-        <div class="product-image"><img src="src/products/it/peripherals.jpg" alt="IT Peripherals & Accessories"></div>
+        <div class="product-image card-slider" id="peripheralsSlider">
+          <div class="card-slides">
+            <img src="src/products/it/peripherals.jpg" alt="Peripherals 1">
+            <img src="src/products/it/peripherals-2.jpg" alt="Peripherals 2">
+            <img src="src/products/it/peripherals-3.jpg" alt="Peripherals 3">
+          </div>
+          <button class="card-prev" onclick="cardSlide('peripheralsSlider',-1)"><i class="fas fa-chevron-left"></i></button>
+          <button class="card-next" onclick="cardSlide('peripheralsSlider',1)"><i class="fas fa-chevron-right"></i></button>
+        </div>
         <h3>IT Peripherals & Accessories</h3>
         <p>Keyboards, mice, cables, connectors, and other computer peripherals for complete workstation setups.</p>
       </div>
