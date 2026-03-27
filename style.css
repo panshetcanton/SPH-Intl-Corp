@@ -242,6 +242,31 @@
   body.product-page .product-card p { font-size: 0.85rem; color: #6b7a9a; line-height: 1.6; margin-top: 8px; flex: 1; }
   body.product-page .products-grid { grid-template-columns: repeat(3, 1fr); }
 
+  /* ── BRANDS SECTION ── */
+  .brands-section { background: var(--white); padding: 70px 0; }
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .brand-logo-card {
+    border: 1px solid var(--gray);
+    border-radius: 6px;
+    padding: 32px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    transition: box-shadow 0.25s, transform 0.25s;
+  }
+  .brand-logo-card:hover { box-shadow: 0 6px 24px rgba(27,47,107,0.1); transform: translateY(-3px); }
+  .brand-logo-card img { max-width: 100%; max-height: 140px; object-fit: contain; opacity: 0.9; transition: opacity 0.25s; }
+  .brand-logo-card:hover img { opacity: 1; }
+
+  @media (max-width: 900px) { .brands-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 580px) { .brands-grid { grid-template-columns: repeat(3, 1fr); } }
+
   /* ── CARD SLIDER ── */
   .card-slider { position: relative; overflow: hidden; }
   .card-slider.product-image { height: auto; aspect-ratio: 1 / 1; }
