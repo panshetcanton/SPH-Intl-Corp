@@ -61,6 +61,6 @@
     'cleaningSlider','mopsSlider','trashSlider','janPaperSlider','safetySlider','maintenanceSlider',
     'packedSlider','csrSlider','reliefSlider','welfareSlider','christmasSlider','grocerySlider',
     'hygieneKitSlider','soapSlider','washSlider','disinfectantSlider','mosquitoSlider','tissueSlider',
-    'laptopSlider','desktopSlider','printerSlider','tabletSlider','cctvSlider','storageSlider','voiceSlider','fingerprintSlider','peripheralsSlider'
+    'laptopSlider','desktopSlider','printerSlider','tabletSlider','cctvSlider','storageSlider','voiceSlider','fingerprintSlider','smarttvSlider'
   ];
   setInterval(() => allSliders.forEach(id => { if (document.getElementById(id)) cardSlide(id, 1); }), 3000);
