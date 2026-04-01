@@ -1,12 +1,10 @@
-// Hamburger toggle
-  function toggleNav() {
+function toggleNav() {
     const navLinks = document.getElementById('navLinks');
     const hamburger = document.getElementById('hamburger');
     const isOpen = navLinks.classList.toggle('open');
     hamburger.classList.toggle('is-open', isOpen);
   }
 
-  // Close nav on link click
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       document.getElementById('navLinks').classList.remove('open');
@@ -14,7 +12,6 @@
     });
   });
 
-  // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver(entries => {
     entries.forEach((e, i) => {
@@ -26,7 +23,6 @@
   }, { threshold: 0.1 });
   reveals.forEach(r => observer.observe(r));
 
-  // Nav scroll effect
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     nav.style.boxShadow = window.scrollY > 10 ? '0 4px 30px rgba(0,0,0,0.4)' : '0 2px 20px rgba(0,0,0,0.3)';
@@ -38,12 +34,10 @@
     }
   });
 
-  // Back to top button
   document.getElementById('backToTop').addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  // Card image slider
   const cardSliderState = {};
   function cardSlide(id, dir) {
     const slider = document.getElementById(id);
@@ -54,7 +48,6 @@
     slides.style.transform = `translateX(-${cardSliderState[id] * 100}%)`;
   }
 
-  // Auto-glide
   const allSliders = [
     'paperSlider','writingSlider','filingSlider','deskSlider','padlockSlider','packagingSlider',
     'airconSlider','fansSlider','fridgeSlider','vipSlider','variousSlider','giveawaysSlider',
