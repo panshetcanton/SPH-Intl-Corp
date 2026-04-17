@@ -45,7 +45,8 @@ function toggleNav() {
     const total = slides.querySelectorAll('img').length;
     if (!cardSliderState[id]) cardSliderState[id] = 0;
     cardSliderState[id] = (cardSliderState[id] + dir + total) % total;
-    slides.style.transform = `translateX(-${cardSliderState[id] * 100}%)`;
+    const slideWidth = slider.offsetWidth;
+    slides.style.transform = `translateX(-${cardSliderState[id] * slideWidth}px)`;
   }
 
   const allSliders = [
