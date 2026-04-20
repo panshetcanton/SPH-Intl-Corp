@@ -57,6 +57,9 @@
     opacity: 0.3;
     z-index: 0;
   }
+  #particles-js {
+    position: absolute; inset: 0; z-index: 1;
+  }
   .hero-grid {
     position: absolute; inset: 0;
     background-image:
@@ -80,6 +83,7 @@
     position: relative; z-index: 2;
     text-align: center; padding: 60px 20px;
     animation: fadeUp 1s ease both;
+    pointer-events: auto;
   }
   .hero-logo { height: 120px; margin-bottom: 30px; filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5)); }
   .hero-tagline {
