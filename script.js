@@ -63,7 +63,7 @@ function toggleNav() {
     const slider = document.getElementById(id);
     const slides = slider.querySelector('.card-slides');
     const total = slides.querySelectorAll('img').length;
-    if (!cardSliderState[id]) cardSliderState[id] = 0;
+    if (!Object.prototype.hasOwnProperty.call(cardSliderState, id)) cardSliderState[id] = 0;
     cardSliderState[id] = (cardSliderState[id] + dir + total) % total;
     const slideWidth = slider.offsetWidth;
     slides.style.transform = `translateX(-${cardSliderState[id] * slideWidth}px)`;
